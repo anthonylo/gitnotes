@@ -74,6 +74,33 @@ git checkout -- <target>
 
 
 
+Allows for developers to create a copy (aka branch) of their code that they can make separate commits to
+Once done, they can merge that branch back into the main master branch
+You can set a name for the branch
+git branch 'name'
+
+See what branches exist
+git branch
+
+Deletes a branch
+git branch -d 'branch name'
+
+Switch branches
+git checkout 'branch name'
+
+
+
+Removes all files from the repository
+git rm
+
+Removes files of a certain wildcard from repository
+git rm '*.filetype'
+
+
+
+Merges a branch to the master branch
+git merge 'branch name'
+
 
 
 git config --global user.name 'your name'    -> lets git know that this is your name
