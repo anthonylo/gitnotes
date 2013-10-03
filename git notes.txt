@@ -1,0 +1,87 @@
+Initializes a Git repository
+git init
+Creates an empty repository /.git/ in the directory that 'git init' was called
+The repository is a hidden directory where Git operates
+
+
+
+See what the current state of the project is
+git status
+
+
+
+If a file says 'untracked' that means Git sees it as a new file
+To tell Git to start tracking changes to the file, add it to the staging area by calling
+git add 'file name'
+
+If you want to add many files of the same type to the Staging Area, you can call the
+command below and that will add all files of the file type that aren't already in the
+Staging Area/repository to the Staging Area/repository
+git add '*.filetype'
+
+
+
+When Git says 'changes to be committed', the files listed below are in the Staging Area and are not
+in the repository yet. It is possible to add or remove files from stage before storing them in the
+repository.
+To store staged changes, the command below is called and that commits all the files in the staging area
+git commit -m "Message"
+
+
+
+To browse the commits, you can call the following command
+git log
+
+
+
+The following command will push the local repo to a remote repository
+git remote add 'name' 'repository url'
+
+
+
+The push command tells Git where to put the commits when we're ready
+This command will take in the name of the remote repository and the local branch name
+	i.e. the default local branch name is master
+	i.e.e. -u tells Git to remember the parameters so next time git push is called Git will know what to do
+git push -u 'remote repo' 'local branch name'
+
+
+
+Checks for changes on the repository and pull down any new changes
+git pull 'remote repo' 'local branch name'
+
+
+
+Checks to see what is different from the last commit
+git diff 'version'
+HEAD is the most recent version
+
+Sees whats is staged
+git diff --staged
+
+
+
+Resetting the Staging Area
+git reset
+
+Resetting a certain file
+git reset 'file name'
+
+
+
+Changes files back to how they were at the last commit of a certain target
+git checkout -- <target>
+
+
+
+
+
+git config --global user.name 'your name'    -> lets git know that this is your name
+
+git config --global user.email 'your email'  -> lets git know that this is your email
+
+git config --global color.diff auto          -> sets diff color to auto
+
+git config --global color.status auto        -> sets status color to auto
+
+git config --global color.branch auto        -> sets branch actions color to auto
