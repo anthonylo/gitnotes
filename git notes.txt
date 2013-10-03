@@ -19,6 +19,9 @@ command below and that will add all files of the file type that aren't already i
 Staging Area/repository to the Staging Area/repository
 git add '*.filetype'
 
+Adds all the files in the current directory to the Staging Area
+git add .
+
 
 
 When Git says 'changes to be committed', the files listed below are in the Staging Area and are not
@@ -60,6 +63,11 @@ git pull 'remote repo' 'local branch name'
 
 
 
+If changes don't conflict, done
+If there are conflicts, markers will be left in the problematic files showing
+the conflict. The command below will show this
+git diff
+
 Checks to see what is different from the last commit
 HEAD is the most recent version
 git diff 'version'
@@ -93,6 +101,8 @@ git branch
 Deletes a branch
 git branch -d 'branch name'
 
+
+
 Switch branches
 git checkout 'branch name'
 
@@ -122,6 +132,9 @@ Get a copy of an existing Git repository and puts it in a target directory
 git clone 'url' 'target'
 
 
+
+Brings up a graphical representation of the resulting history
+gitk
 
 git config --global user.name 'your name'    -> lets git know that this is your name
 
