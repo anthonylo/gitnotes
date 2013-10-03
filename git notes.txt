@@ -111,6 +111,18 @@ git merge 'branch name'
 
 
 
+Get a copy of an existing Git repository
+Similar to checkout from SVN
+clone receives a copy of nearly all data that the server has
+Allows for the user to set the server back up to a state that
+was not corrupted if the server gets corrupted for any reason
+git clone 'url'
+
+Get a copy of an existing Git repository and puts it in a target directory
+git clone 'url' 'target'
+
+
+
 git config --global user.name 'your name'    -> lets git know that this is your name
 
 git config --global user.email 'your email'  -> lets git know that this is your email
