@@ -27,6 +27,14 @@ repository.
 To store staged changes, the command below is called and that commits all the files in the staging area
 git commit -m "Message"
 
+Each commit gets a number
+Each commit is stored as a SHA1 Hash
+Guarantee content of repo
+Promise what we put in is what we get out
+
+If you change a file, the hash will change
+If you want to talk about a commit, you can look at the first 8 characters
+
 
 
 To browse the commits, you can call the following command
@@ -53,8 +61,8 @@ git pull 'remote repo' 'local branch name'
 
 
 Checks to see what is different from the last commit
-git diff 'version'
 HEAD is the most recent version
+git diff 'version'
 
 Sees whats is staged
 git diff --staged
